@@ -36,7 +36,7 @@ export function Footer({ t, language }: FooterProps) {
       <FooterInner>
         <div>
           <strong>{companyText.legalName}</strong>
-          <div>{companyText.field}</div>
+          {/* <div>{companyText?.field ?? ''}</div> */}
         </div>
         <div>© {new Date().getFullYear()} VIORA. {t.rights}</div>
       </FooterInner>
