@@ -1,4 +1,7 @@
 {
+  "name": "viora-attendance-project",
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
