@@ -19,13 +19,12 @@ type AppProps = {
 
 export default function App({ mode, language, onModeChange, onLanguageChange }: AppProps) {
   const t = dictionary[language];
-  const getHashPath = () => window.location.hash.slice(1) || '/';
-  const [path, setPath] = useState(getHashPath);
+  const [path, setPath] = useState(() => window.location.pathname);
 
   useEffect(() => {
-    const updatePath = () => setPath(getHashPath());
-    window.addEventListener('hashchange', updatePath);
-    return () => window.removeEventListener('hashchange', updatePath);
+    const updatePath = () => setPath(window.location.pathname);
+    window.addEventListener('popstate', updatePath);
+    return () => window.removeEventListener('popstate', updatePath);
   }, []);
 
   if (path.startsWith('/admin')) {
