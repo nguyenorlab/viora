@@ -795,11 +795,11 @@ const Td = styled.td<{ $total?: boolean; $weekend?: 'sat' | 'sun' | 'weekday'; $
 
   &:first-child {
     background: ${({ $weekend, $disabled, theme }) => {
-      if ($disabled) return theme.mode === 'light' ? '#D9D9D9' : '#303A4D';
-      if ($weekend === 'sat') return '#2D36FF';
-      if ($weekend === 'sun') return '#FF1111';
-      return theme.mode === 'light' ? '#FEF9A7' : '#33362A';
-    }};
+    if ($disabled) return theme.mode === 'light' ? '#D9D9D9' : '#303A4D';
+    if ($weekend === 'sat') return '#2D36FF';
+    if ($weekend === 'sun') return '#FF1111';
+    return theme.mode === 'light' ? '#FEF9A7' : '#33362A';
+  }};
     color: ${({ $weekend, $disabled, theme }) => ($weekend === 'sat' || $weekend === 'sun' ? '#FFFFFF' : $disabled ? theme.colors.muted : theme.colors.text)};
     font-weight: 900;
   }
@@ -1784,7 +1784,7 @@ export function AdminAttendancePage({ mode, language, onModeChange, onLanguageCh
   return (
     <AdminShell>
       <AdminTopbar>
-        <HeaderLeft>
+        <AdminTopbarInner>
           <Brand href="/admin" aria-label="VIORA ADMIN">
             <Mark />
             VIORA ADMIN

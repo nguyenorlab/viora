@@ -8,7 +8,7 @@ Gồm Homepage và Admin
 Truy cập:
 
 ```txt
-#/admin
+/admin
 ```
 
 Đã có:
