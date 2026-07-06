@@ -1785,7 +1785,7 @@ export function AdminAttendancePage({ mode, language, onModeChange, onLanguageCh
     <AdminShell>
       <AdminTopbar>
         <AdminTopbarInner>
-          <Brand href="/admin" aria-label="VIORA ADMIN">
+          <Brand href="#/admin" aria-label="VIORA ADMIN">
             <Mark />
             VIORA ADMIN
           </Brand>
