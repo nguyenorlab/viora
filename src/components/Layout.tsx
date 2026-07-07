@@ -35,7 +35,7 @@ export const SectionTitle = styled.h2`
   margin: 0;
   font-size: clamp(32px, 5vw, 52px);
   line-height: 1.08;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.06em;
 `;
 
 export const SectionText = styled.p`

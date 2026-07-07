@@ -251,10 +251,10 @@ export function Hero({ t }: HeroProps) {
 
         <VisualCard aria-label="VIORA system dashboard preview">
           <Ring />
-          <Dot $left="76%" $top="38%" />
-          <Dot $left="19%" $top="62%" $delay="-1.4s" />
-          <Dot $left="49%" $top="62%" $delay="-1.4s" />
-          <Dot $left="79%" $top="62%" $delay="-1.4s" />
+          {/* <Dot $left="76%" $top="38%" /> */}
+          <Dot $left="19%" $top="63%" $delay="-1.4s" />
+          <Dot $left="49%" $top="63%" $delay="-1.4s" />
+          <Dot $left="79%" $top="63%" $delay="-1.4s" />
           <CodePanel>
             <PanelHeader><span /><span /><span /></PanelHeader>
             {t.panel.map((item, index) => (

@@ -236,7 +236,7 @@ function getSpreadsheetId() {
 
 function getSheetsClient() {
   const email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
-  const rawPrivateKey = process.env.GOOGLE_PRIVATE_KEY;
+  const rawPrivateKey = process?.env?.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n');
 
   if (!email) throw new Error('GOOGLE_SERVICE_ACCOUNT_EMAIL is not configured.');
   if (!rawPrivateKey) throw new Error('GOOGLE_PRIVATE_KEY is not configured.');
